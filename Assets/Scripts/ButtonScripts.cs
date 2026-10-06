@@ -6,16 +6,16 @@ public class ButtonScripts : MonoBehaviour
 {
     public void MainMenuButton()
     {
-        ServiceHubManager.Instance.levelManager.LoadScene("Level1", SceneManager.GetActiveScene());
+        ServiceHubManager.Instance.levelManager.LoadScene(1);
     }
 
     public void Level1Button()
     {
-        ServiceHubManager.Instance.levelManager.LoadScene("Level2", SceneManager.GetActiveScene());
+        ServiceHubManager.Instance.levelManager.LoadScene(2);
     }
 
     public void Level2Button()
     {
-        ServiceHubManager.Instance.levelManager.LoadScene("MainMenu", SceneManager.GetActiveScene());
+        ServiceHubManager.Instance.levelManager.LoadScene(0);
     }
 }

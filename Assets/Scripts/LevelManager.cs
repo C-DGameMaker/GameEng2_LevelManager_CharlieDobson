@@ -3,19 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public string NextScene;
-    public Scene currentScene;
-
-    private void Awake()
+    public void LoadScene(int sceneIndex)
     {
-        currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(sceneIndex);
     }
-    public void LoadScene(string sceneName, Scene currentActiveScene)
-    {
-        NextScene = sceneName;
-        currentScene = currentActiveScene;
-        SceneManager.LoadScene(NextScene);
-    }
-
-
 }
